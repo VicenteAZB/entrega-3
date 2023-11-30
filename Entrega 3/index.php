@@ -32,20 +32,22 @@
                 </article>
             </div>
         </div>
-        <div class="text-center "id="Diagrama"> <!-- Div con un identificador "Diagrama" -->
-            <p id="descripcion">Componentes</p> <!-- Párrafo con un identificador "descripcion" -->
-            <img id="Procesador" src="./Imágenes/Procesador.jpg" alt="Imágenes de Procesadores Intel y AMD">
-            <img id="Tarjeta" src="./Imágenes/Tarjeta%20Gráfica.webp" alt="Imágenes de Tarjetas Gráficas Nvidia y AMD Radeon">
-            <img id="Placa" src="./Imágenes/Placa%20Base.webp" alt="Imagen de placa base">
-            <img id="Ram" src="./Imágenes/Ram.jpg" alt="Imagen de memoria RAM">
-            <img id="Fuente" src="./Imágenes/Fuente.jpg" alt="Imagen de fuente de poder">
+        <div class="text-center row "id="Diagrama"> <!-- Div con un identificador "Diagrama" -->
+            <div class="col-lg-12 col-md-12 ">
+                <p id="descripcion">Componentes</p> <!-- Párrafo con un identificador "descripcion" -->
+                <img id="Procesador" src="./Imágenes/Procesador.jpg" alt="Imágenes de Procesadores Intel y AMD">
+                <img id="Tarjeta" src="./Imágenes/Tarjeta%20Gráfica.webp" alt="Imágenes de Tarjetas Gráficas Nvidia y AMD Radeon">
+                <img id="Placa" src="./Imágenes/Placa%20Base.webp" alt="Imagen de placa base">
+                <img id="Ram" src="./Imágenes/Ram.jpg" alt="Imagen de memoria RAM">
+                <img id="Fuente" src="./Imágenes/Fuente.jpg" alt="Imagen de fuente de poder">
+            </div>
         </div>
     </main>
     <div id="productos"> <!-- Div con un identificador "productos" -->
         <ul id="lista"> <!-- Lista no ordenada con un identificador "lista" -->
         </ul>
     </div>
-    <script> src="https://code.jquery.com/jquery-3.7.1.min.js"</script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script src="./Scripts/script.js"></script> <!-- Inclusión de un archivo de script JavaScript llamado "script.js" -->
 </body> <!-- Fin del cuerpo del documento HTML -->
 </html> <!-- Fin del documento HTML -->

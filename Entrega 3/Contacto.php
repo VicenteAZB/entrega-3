@@ -43,6 +43,7 @@
 
     <button><a href="formulario_borrar_cuenta.php">Eliminar cuenta</a></button>
     <button><a href="formulario_modificar_mensaje.php">Modificar mensaje</a></button>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script src="./Scripts/script1.js"></script> <!-- Inclusión de un archivo de script JavaScript llamado "script1.js" -->
     <script src="./Scripts/mostrar_contactaciones.js"></script>
 </body> <!-- Fin del cuerpo del documento HTML -->
