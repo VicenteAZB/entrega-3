@@ -1,5 +1,5 @@
 <?php
-    session_start();
+    include("header.php");
     if(!isset($_SESSION['idusuario'])){
         echo '
             <script>
@@ -22,9 +22,6 @@
     <title>Contacto</title> <!-- Título de la página que se muestra en la pestaña del navegador -->
 </head> <!-- Fin del encabezado del documento HTML -->
 <body> <!-- Inicio del cuerpo del documento HTML -->
-    <?php
-        include("header.php"); // Inclusión del archivo "header.php" mediante PHP, que se usa para agregar contenido común en varias páginas.
-    ?>
     <section id="contacto"> <!-- Sección con un identificador "contacto" -->
         <h1>Contacto</h1> <!-- Encabezado de nivel 1 que indica "Contacto" -->
         <form action="envio.php" method="post"> <!-- Formulario que envía datos al archivo "envio.php" utilizando el método POST -->
@@ -37,7 +34,7 @@
     </section> <!-- Fin de la sección "contacto" -->
     <div class="reviews">
         <button id="reseñas">Ver mensajes de otros usuarios</button>
-        <h2>Reseñas de otros usuarios</h2>
+        <h2>Mensajes de otros usuarios</h2>
         <ul id="reviewsList"></ul>
     </div>
 

@@ -1,0 +1,11 @@
+/* Establece el tamaÃ±o de fuente en un 62.5% del tamaÃ±o base para facilitar los cÃ¡lculos de em */
+html {
+    font-size: 62.5%;
+}
+
+/* Establece reglas de estilo para todos los elementos en la pÃ¡gina */
+* {
+    box-sizing: border-box; /* El contenido se ajusta al modelo de caja */
+    margin: 0; /* Se establece el margen a 0 */
+    padding: 0; /* Se establece el relleno a 0 */
+}

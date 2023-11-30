@@ -66,24 +66,3 @@ function register(){
     }
 }
   
-ojo_login.addEventListener("click", function(){
-    if(input_pass_login.type == "password"){
-        input_pass_login.type = "text"
-        ojo_login.style.opacity = 0.8
-    }else{
-        input_pass_login.type = "password"
-        ojo_login.style.opacity = 0.3
-    }
-})
-
-ojo_register.addEventListener("click", function(){
-    if(input_pass_register.type == "password"){
-        input_pass_register.type = "text"
-        ojo_register.style.opacity = 0.8
-    }else{
-        input_pass_register.type = "password"
-        ojo_register.style.opacity = 0.3
-    }
-})  
-    
-

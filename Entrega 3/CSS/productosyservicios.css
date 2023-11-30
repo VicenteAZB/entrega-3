@@ -29,8 +29,6 @@ h1 {
 /* Estilos para tablas */
 table {
     width: 100%; /* Ancho del 100% para llenar el contenedor */
-    padding-left: 6rem;
-    padding-right: 6rem;
 }
 
 /* Estilos para encabezados de tabla (th) */
