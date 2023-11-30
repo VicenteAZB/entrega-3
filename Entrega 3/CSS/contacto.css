@@ -1,0 +1,163 @@
+/* Establece el tamaño de fuente en un 62.5% del tamaño base para facilitar los cálculos de em */
+html {
+    font-size: 62.5%;
+}
+
+/* Establece reglas de estilo para todos los elementos en la página */
+* {
+    box-sizing: border-box; /* El contenido se ajusta al modelo de caja */
+    padding: 0; /* Se establece el relleno a 0 */
+    margin: 0; /* Se establecen los márgenes a 0 */
+}
+
+/* Establece estilos para el cuerpo de la página */
+body {
+    font-size: 3rem; /* Tamaño de fuente de 3 rem (relativo a la fuente raíz) */
+}
+
+/* Establece estilos para los encabezados h1 */
+h1 {
+    padding: 2rem; /* Relleno de 2 rem en todas las direcciones */
+}
+
+/* Establece estilos para el formulario dentro del elemento con id "contacto" */
+#contacto form {
+    display: flex; /* Utiliza un diseño flexible */
+    flex-direction: column; /* El contenido se organiza en una columna */
+    align-items: flex-start; /* Los elementos se alinean a la izquierda */
+    margin-top: 5rem; /* Margen superior de 5 rem */
+    font-size: 2rem; /* Tamaño de fuente de 2 rem */
+    margin-left: 1rem; /* Margen izquierdo de 1 rem */
+    padding: 1rem; /* Relleno de 1 rem en todas las direcciones */
+}
+
+/* Establece estilos para los campos de entrada en el formulario */
+input {
+    color: black; /* Color del texto en negro */
+    font-size: 1.6rem; /* Tamaño de fuente de 1.6 rem */
+    padding: 0.2rem; /* Relleno de 0.2 rem en todas las direcciones */
+}
+
+/* Establece estilos para el área de texto en el formulario */
+textarea {
+    color: black; /* Color del texto en negro */
+    font-size: 1.6rem; /* Tamaño de fuente de 1.6 rem */
+    padding: 0.2rem; /* Relleno de 0.2 rem en todas las direcciones */
+}
+
+.reviews {
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    border-radius: 10px;
+    text-align: center;
+  }
+  
+  .reviews h2 {
+    text-align: left;
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .reviews ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .reviews li {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    color: #333;
+  }
+  
+  .reviews .review-user {
+    text-align: left;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #090303; 
+  }
+  
+  .reviews .review-text {
+    text-align: justify;
+    font-size: 18px;
+  }
+  
+  .add-review {
+    padding: 40px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    border-radius: 10px;
+  }
+  
+  .add-review h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  #reviewForm {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  #reviewForm label {
+    font-size: 18px;
+    margin-bottom: 5px;
+    color: #333;
+  }
+  
+  #reviewForm input, #reviewForm textarea {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  #reviewForm button {
+    padding: 15px 30px;
+    background-color: #1fcf25;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .review {
+    overflow: hidden;
+    word-wrap: break-word; /* Permite el salto de palabra si es necesario */
+}
+
+#reviewForm button:hover {
+  background-color: #b4deb5;
+}
+
+#reseñas{
+  margin-bottom: 20px;
+  padding: 15px 30px;
+  background-color: #1fcf25;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+  transition: background-color 0.3s ease;
+}
+
+#reseñas:hover{
+  background-color: #b4deb5;
+}
+
+@media (min-width: 768px) {
+  .add-review, .reviews {
+      max-width: 800px;
+      margin: 40px auto;
+  }
+}

@@ -1,0 +1,134 @@
+/* Establece el tamaÃ±o de fuente en un 62.5% del tamaÃ±o base para facilitar los cÃ¡lculos de em */
+html {
+    font-size: 62.5%;
+}
+
+/* Establece reglas de estilo para todos los elementos en la pÃ¡gina */
+* {
+    box-sizing: border-box; /* El contenido se ajusta al modelo de caja */
+    margin: 0; /* Se establece el margen a 0 */
+    padding: 0; /* Se establece el relleno a 0 */
+    color: white; /* El color del texto se establece en blanco */
+}
+
+
+
+
+/* Establece estilos para el elemento con id "Cuadro1" */
+#Cuadro1 {
+    display: inline-flex; /* Utiliza un diseÃ±o de caja flexible en lÃ­nea */
+    width: 30rem; /* Ancho de 30 rem */
+    height: 20rem; /* Altura de 20 rem */
+    border: rgb(0, 0, 0) solid; /* Borde sÃ³lido de color negro */
+    border-radius: 2rem; /* Borde redondeado de 2 rem */
+    margin-top: 3rem; /* Margen superior de 3 rem */
+    margin-bottom: 3rem; /* Margen inferior de 3 rem */
+}
+
+/* Cambia el fondo cuando el mouse estÃ¡ sobre el elemento con id "Cuadro1" */
+#Cuadro1:hover {
+    background-color: rgb(218, 51, 0); /* Fondo en rojo cuando se pasa el mouse sobre el elemento */
+}
+
+/* Establece estilos para el tÃ­tulo y el pÃ¡rrafo dentro del elemento con id "Cuadro1" */
+#Cuadro1 h1 {
+    color: rgb(0, 0, 0); /* Color del texto en negro */
+    font-size: 3rem; /* TamaÃ±o de fuente de 3 rem */
+    margin-top: 2rem; /* Margen superior de 2 rem */
+    font-family: 'Gill Sans'; /* Fuente de la familia 'Gill Sans' */
+}
+
+#Cuadro1 p {
+    color: rgb(0, 0, 0); /* Color del texto en negro */
+    font-family: Georgia; /* Fuente de la familia 'Georgia' */
+    margin-top: 3rem; /* Margen superior de 3 rem */
+    font-size: 2rem; /* TamaÃ±o de fuente de 2 rem */
+    padding: 0.2rem; /* Relleno de 0.2 rem en todas las direcciones */
+}
+
+/* Establece estilos para el elemento con id "Cuadro2" (similar a "Cuadro1") */
+#Cuadro2 {
+    display: inline-flex; /* Utiliza un diseÃ±o de caja flexible en lÃ­nea */
+    width: 30rem; /* Ancho de 30 rem */
+    height: 20rem; /* Altura de 20 rem */
+    border: rgb(0, 0, 0) solid; /* Borde sÃ³lido de color negro */
+    border-radius: 2rem; /* Borde redondeado de 2 rem */
+    margin-top: 3rem; /* Margen superior de 3 rem */
+    margin-bottom: 3rem; /* Margen inferior de 3 rem */
+}
+
+/* Cambia el fondo cuando el mouse estÃ¡ sobre el elemento con id "Cuadro2" */
+#Cuadro2:hover {
+    background-color: rgb(87, 0, 185); /* Fondo en pÃºrpura cuando se pasa el mouse sobre el elemento */
+}
+
+/* Establece estilos para el tÃ­tulo y el pÃ¡rrafo dentro del elemento con id "Cuadro2" */
+#Cuadro2 h1 {
+    color: rgb(0, 0, 0); /* Color del texto en negro */
+    font-size: 3rem; /* TamaÃ±o de fuente de 3 rem */
+    margin-top: 2rem; /* Margen superior de 2 rem */
+    font-family: 'Gill Sans'; /* Fuente de la familia 'Gill Sans' */
+}
+
+#Cuadro2 p {
+    color: rgb(0, 0, 0); /* Color del texto en negro */
+    font-family: Georgia; /* Fuente de la familia 'Georgia' */
+    margin-top: 3rem; /* Margen superior de 3 rem */
+    font-size: 2rem; /* TamaÃ±o de fuente de 2 rem */
+    padding: 0.2rem; /* Relleno de 0.2 rem en todas las direcciones */
+}
+
+/* Establece estilos para el elemento con id "Diagrama" */
+#Diagrama {
+    margin-top: 2rem; /* Margen superior de 2 rem */
+    margin-bottom: 4rem; /* Margen inferior de 4 rem */
+    max-width: 100%; /* Ancho mÃ¡ximo del 100% */
+}
+
+/* Establece estilos para el elemento con id "descripcion" */
+#descripcion {
+    font-weight: bold; /* Texto en negrita */
+    color: rgb(40, 0, 77); /* Color del texto */
+    width: 100%; /* Ancho del 100% */
+    font-size: 4rem; /* TamaÃ±o de fuente de 4 rem */
+    font-family: 'Gill Sans'; /* Fuente de la familia 'Gill Sans' */
+    text-decoration: dotted; /* Texto subrayado de puntos */
+    margin-bottom: 4rem; /* Margen inferior de 4 rem */
+}
+
+/* Establece estilos para las imÃ¡genes con id "Procesador", "Tarjeta", "Placa", "Ram" y "Fuente" */
+#Procesador, #Tarjeta, #Placa, #Ram, #Fuente {
+    width: 19rem; /* Ancho de 19 rem */
+    height: 13rem; /* Altura de 13 rem */
+    padding: 1rem; /* Relleno de 1 rem en todas las direcciones */
+    border-radius: 2rem; /* Borde redondeado de 2 rem */
+}
+
+/* Cambia los estilos cuando el elemento estÃ¡ activo (haciendo clic) o cuando se pasa el mouse sobre las imÃ¡genes */
+#Procesador:active, #Tarjeta:active, #Placa:active, #Ram:active, #Fuente:active {
+    padding: 0; /* Elimina el relleno al hacer clic */
+    border: 0.2rem solid; /* AÃ±ade un borde de 0.2 rem al hacer clic */
+}
+
+#Procesador:hover, #Tarjeta:hover, #Placa:hover, #Ram:hover, #Fuente:hover {
+    width: 17rem; /* Reduce el ancho al pasar el mouse sobre las imÃ¡genes */
+    height: 12rem; /* Reduce la altura al pasar el mouse sobre las imÃ¡genes */
+}
+
+/* Establece estilos para el elemento con id "productos" y su lista no ordenada */
+#productos {
+    display: grid; /* Utiliza un diseÃ±o de cuadrÃ­cula */
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; /* Fuente */
+    text-align: justify; /* Alinea el texto justificado */
+    width: 100%; /* Ancho del 100% */
+    height: 100%; /* Altura del 100% */
+    background-color: rgb(42, 1, 54); /* Fondo en color pÃºrpura */
+    font-size: 1.8rem; /* TamaÃ±o de fuente de 1.8 rem */
+    padding-left: 3rem; /* Relleno izquierdo de 3 rem */
+    padding-right: 3rem; /* Relleno derecho de 3 rem */
+}
+
+/* Establece estilos para los elementos de la lista dentro de "#productos" */
+#lista li {
+    margin-bottom: 1.5rem; /* Margen inferior de 1.5 rem entre elementos de la lista */
+}

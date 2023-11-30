@@ -1,0 +1,85 @@
+/* Establece el tamaño de fuente base al 62.5% del tamaño estándar para cálculos relativos */
+html {
+    font-size: 62.5%;
+}
+
+/* Aplica reglas al contenido de todos los elementos */
+* {
+    box-sizing: border-box; /* El tamaño total incluye contenido, relleno y borde */
+    padding: 0; /* Establece el relleno a 0 */
+    margin: 0; /* Establece el margen a 0 */
+    color: white; /* Establece el color de texto en blanco */
+}
+
+/* Estilos para el cuerpo de la página */
+body {
+    background-color: rgb(1, 41, 34); /* Establece el fondo en un tono específico de verde */
+    background-size: 100%; /* Ajusta el tamaño de fondo al 100% */
+}
+
+/* Estilos para encabezados de nivel 1 (h1) */
+h1 {
+    text-align: center; /* Alinea el texto al centro */
+    font-weight: bold; /* Establece el peso de la fuente en negrita */
+    margin-top: 3rem; /* Margen superior de 3 unidades */
+    font-size: 4rem; /* Tamaño de fuente de 4rem */
+    margin-bottom: 3rem;
+}
+
+/* Estilos para tablas */
+table {
+    width: 100%; /* Ancho del 100% para llenar el contenedor */
+    padding-left: 6rem;
+    padding-right: 6rem;
+}
+
+/* Estilos para encabezados de tabla (th) */
+th {
+    font-size: 2rem; /* Tamaño de fuente de 2rem */
+    text-align: center; /* Alinea el texto al centro */
+    border: 1px solid white;
+}
+
+/* Estilos para celdas de tabla (td) */
+td {
+    font-size: 2rem; /* Tamaño de fuente de 2rem */
+    text-align: justify; /* Alinea el texto de manera justificada */
+    padding: 0.5rem 0.5rem 0.5rem 0.5rem; /* Relleno de 0.5 unidades en todas direcciones */
+    border: 1px solid white;
+}
+
+/* Estilos para párrafos (p) */
+p {
+    margin-left: 1rem; /* Margen izquierdo de 1 unidad */
+    margin-right: 1rem; /* Margen derecho de 1 unidad */
+}
+
+/* Estilos para tamaños de pantalla menores o iguales a 872px */
+@media screen and (max-width: 872px) {
+    h1 {
+        font-size: 3rem; /* Reduce el tamaño de fuente de h1 */
+    }
+
+    th {
+        font-size: 1.6rem; /* Reduce el tamaño de fuente de los encabezados de tabla */
+    }
+
+    td {
+        font-size: 1.6rem; /* Reduce el tamaño de fuente de las celdas de tabla */
+    }
+}
+
+/* Estilos para tamaños de pantalla menores o iguales a 600px */
+@media screen and (max-width: 600px) {
+    h1 {
+        font-size: 2rem; /* Reduce el tamaño de fuente de h1 */
+    }
+
+    th {
+        font-size: 1.2rem; /* Reduce el tamaño de fuente de los encabezados de tabla */
+    }
+
+    td {
+        font-size: 1.2rem; /* Reduce el tamaño de fuente de las celdas de tabla */
+    }
+}
