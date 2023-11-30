@@ -1,3 +1,6 @@
+<?php
+    include("header.php"); // Inclusión del archivo "header.php" mediante PHP, que se usa para agregar contenido común en varias páginas.
+?>
 <!DOCTYPE html> <!-- Declaración del tipo de documento HTML -->
 <html lang="es"> <!-- Inicio del elemento HTML con especificación del idioma español -->
 <head> <!-- Inicio del encabezado del documento HTML -->
@@ -9,9 +12,6 @@
     <title>Quienes somos</title> <!-- Título de la página que se muestra en la pestaña del navegador -->
 </head> <!-- Fin del encabezado del documento HTML -->
 <body> <!-- Inicio del cuerpo del documento HTML -->
-    <?php
-        include("header.php"); // Inclusión del archivo "header.php" mediante PHP, que se usa para agregar contenido común en varias páginas.
-    ?>
     <h1> Quienes somos </h1> <!-- Encabezado de nivel 1 que indica "Quienes somos" -->
     <table> <!-- Inicio de una tabla HTML -->
         <tr> <!-- Fila de la tabla -->

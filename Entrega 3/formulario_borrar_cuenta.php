@@ -14,7 +14,7 @@ session_start();
     include 'header.php'
     ?>
     <form action="borrar_cuenta.php" method="POST">
-        <h2>Iniciar Sesión</h2>
+        <h2>Borrar cuenta</h2>
             <input type="email" placeholder="Ingrese su correo electrónico" name="correo" required>
             <input type="password" class="passwrd" id="InputPassLogin" placeholder="Ingrese su contraseña" name="password" required>
             <button id="Delete">Eliminar cuenta</button>

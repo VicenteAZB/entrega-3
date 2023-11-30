@@ -8,7 +8,6 @@ html {
     box-sizing: border-box; /* El contenido se ajusta al modelo de caja */
     margin: 0; /* Se establece el margen a 0 */
     padding: 0; /* Se establece el relleno a 0 */
-    color: white; /* El color del texto se establece en blanco */
 }
 
 
@@ -119,10 +118,11 @@ html {
 #productos {
     display: grid; /* Utiliza un diseÃ±o de cuadrÃ­cula */
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; /* Fuente */
+    color: rgb(0, 0, 0);
     text-align: justify; /* Alinea el texto justificado */
     width: 100%; /* Ancho del 100% */
     height: 100%; /* Altura del 100% */
-    background-color: rgb(42, 1, 54); /* Fondo en color pÃºrpura */
+    background-color: rgb(255, 255, 255); /* Fondo en color pÃºrpura */
     font-size: 1.8rem; /* TamaÃ±o de fuente de 1.8 rem */
     padding-left: 3rem; /* Relleno izquierdo de 3 rem */
     padding-right: 3rem; /* Relleno derecho de 3 rem */

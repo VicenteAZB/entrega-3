@@ -38,6 +38,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $stmt->execute();
 
     if ($stmt->affected_rows > 0) {
+        echo '
+        <script>
+            alert(" Mensaje modificado exitosamente");
+            window.location = "registro_y_sesión.php";
+        </script>
+        ';
         header("location: Contacto.php?mensaje=Mensaje actualizado correctamente");
         exit;
     } else {
