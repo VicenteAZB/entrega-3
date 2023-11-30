@@ -30,6 +30,7 @@
     <div>
         <img id="rostro">
     </div>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script src="./Scripts/script3.js"></script> <!-- Inclusión de un archivo de script JavaScript llamado "script1.js" -->
 </body> <!-- Fin del cuerpo del documento HTML -->
 </html> <!-- Fin del documento HTML -->

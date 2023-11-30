@@ -45,6 +45,7 @@
         <ul id="lista"> <!-- Lista no ordenada con un identificador "lista" -->
         </ul>
     </div>
+    <script> src="https://code.jquery.com/jquery-3.7.1.min.js"</script>
     <script src="./Scripts/script.js"></script> <!-- Inclusión de un archivo de script JavaScript llamado "script.js" -->
 </body> <!-- Fin del cuerpo del documento HTML -->
 </html> <!-- Fin del documento HTML -->
