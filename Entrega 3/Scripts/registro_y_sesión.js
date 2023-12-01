@@ -58,9 +58,4 @@ $(document).ready(function(){
             caja_trasera_login.css("opacity", "1");
         }
     }
-<<<<<<< HEAD
 });
-=======
-}
-  
->>>>>>> 3b3776202c9448ff8fe9bf286dd9df931a769ddd
