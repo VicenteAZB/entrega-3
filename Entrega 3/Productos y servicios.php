@@ -1,4 +1,5 @@
 <?php
+    session_start();
     include("header.php"); // Inclusión del archivo "header.php" mediante PHP, que se usa para agregar contenido común en varias páginas.
 ?>
 <!DOCTYPE html> <!-- Declaración del tipo de documento HTML -->

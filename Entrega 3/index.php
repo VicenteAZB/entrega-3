@@ -1,4 +1,5 @@
 <?php
+    session_start();
     include("conex.inc"); // Inclusión de un archivo PHP llamado "conex.inc"
 ?>
 <!DOCTYPE html> <!-- Declaración del tipo de documento HTML -->

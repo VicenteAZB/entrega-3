@@ -1,13 +1,12 @@
 <?php
 session_start();
 ?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="CSS/contacto.css"> <!-- Enlace a una hoja de estilos CSS externa para esta página -->
+    <link rel="stylesheet" type="text/css" href="./CSS/formularios.css"> <!-- Enlace a una hoja de estilos CSS externa para esta página -->
     <title>Modificar mensaje</title>
 </head>
 <body>
@@ -28,9 +27,10 @@ session_start();
     
     $result = $stmt->get_result();
     
-    while ($row = $result->fetch_assoc()) {
-        echo "<li>" . 'idmensaje: ' . $row['idmensaje'] . ' ----> mensaje: ' . $row['Mensaje'] . "</li>";
+    while ($row = $result->fetch_assoc()) {      
+        echo "<li id='mensaje-1'>" . 'ID: ' . $row['idmensaje'] . '<br>' .' Mensaje: ' . $row['Mensaje'] . "</li>";
     }
+    
     
     $stmt->close();
 

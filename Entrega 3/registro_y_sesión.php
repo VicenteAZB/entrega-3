@@ -1,8 +1,8 @@
 <?php
-session_start();
 if (isset($_SESSION['usuario'])) {
     header("location: contacto.php");
 }
+include 'header.php';
 ?>
 
 <!DOCTYPE html>
@@ -15,9 +15,6 @@ if (isset($_SESSION['usuario'])) {
 </head>
 
 <body>
-    <?php
-        include 'header.php'
-    ?>
     <main>
         <div class="container">
             <div class="box-main">
