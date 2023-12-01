@@ -59,102 +59,101 @@ form #btn:hover {
   background-color: #0056b3; /* Cambia el color de fondo al pasar el ratón sobre el botón */
 }
 
-
+/* Estilos para la sección de reseñas */
 .reviews {
-    padding: 20px;
-    background-color: #fff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    margin: 20px;
-    border-radius: 10px;
-    text-align: center;
-  }
-  
-  .reviews h2 {
-    text-align: left;
-    font-size: 24px;
-    margin-bottom: 20px;
-    color: #333;
-  }
-  
-  .reviews ul {
-    list-style: none;
-    padding: 0;
-  }
-  
-  .reviews li {
-    border: 1px solid #ccc;
-    padding: 20px;
-    margin-bottom: 20px;
-    border-radius: 10px;
-    background-color: #f9f9f9;
-    color: #333;
-  }
-  
-  .reviews .review-user {
-    text-align: left;
-    font-weight: bold;
-    margin-bottom: 10px;
-    color: #090303; 
-  }
-  
-  .reviews .review-text {
-    text-align: justify;
-    font-size: 18px;
-  }
-  
-  .add-review {
-    padding: 40px;
-    background-color: #fff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    margin: 20px;
-    border-radius: 10px;
-  }
-  
-  .add-review h2 {
-    font-size: 24px;
-    margin-bottom: 20px;
-    color: #333;
-  }
-  
-  #reviewForm {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  #reviewForm label {
-    font-size: 18px;
-    margin-bottom: 5px;
-    color: #333;
-  }
-  
-  #reviewForm input, #reviewForm textarea {
-    padding: 10px;
-    margin-bottom: 15px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-  }
-  
-  #reviewForm button {
-    padding: 15px 30px;
-    background-color: #1a0044;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 18px;
-    transition: background-color 0.3s ease;
-  }
-  
-  .review {
-    overflow: hidden;
-    word-wrap: break-word; /* Permite el salto de palabra si es necesario */
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin: 20px;
+  border-radius: 10px;
+  text-align: center;
 }
 
-#reviewForm button:hover {
-  background-color: #b4deb5;
+.reviews h2 {
+  text-align: left;
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #333;
 }
 
-#reseñas{
+.reviews ul {
+  list-style: none;
+  padding: 0;
+}
+
+.reviews li {
+  border: 1px solid #ccc;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+.reviews .review-user {
+  text-align: left;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #090303;
+}
+
+.reviews .review-text {
+  text-align: justify;
+  font-size: 18px;
+}
+
+/* Estilos para la sección de añadir reseña */
+.add-review {
+  padding: 40px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin: 20px;
+  border-radius: 10px;
+}
+
+.add-review h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+#reviewForm {
+  display: flex;
+  flex-direction: column;
+}
+
+#reviewForm label {
+  font-size: 18px;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+#reviewForm input, #reviewForm textarea {
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+#reviewForm button {
+  padding: 15px 30px;
+  background-color: #1a0044;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+  transition: background-color 0.3s ease;
+}
+
+/* Estilos para la clase .review */
+.review {
+  overflow: hidden;
+  word-wrap: break-word; /* Permite el salto de palabra si es necesario */
+}
+
+/* Estilos para el botón de "Ver Reseñas" */
+#reseñas {
   margin-bottom: 20px;
   padding: 15px 30px;
   background-color: #1a0044;
@@ -166,19 +165,21 @@ form #btn:hover {
   transition: background-color 0.3s ease;
 }
 
-#reseñas:hover{
+#reseñas:hover {
   background-color: #3f00a5;
 }
 
-#botones{
+/* Estilos para la sección de botones */
+#botones {
   text-align: center;
   margin-bottom: 2rem;
 }
 
-#botones button{
+#botones button {
   padding: 2rem;
 }
 
+/* Estilos responsivos para pantallas más grandes (ancho mínimo de 768px) */
 @media (min-width: 768px) {
   .add-review, .reviews {
       max-width: 800px;

@@ -10,23 +10,24 @@ html {
     margin: 0; /* Se establecen los márgenes a 0 */
 }
 
-main{
+/* Estilos generales para el contenido principal */
+main {
     width: 62%;
     padding: 20px;
     margin: auto;
     margin-top: 100px;
 }
 
-        /* FORMULARIO  */
-
-.container{
+/* Estilos para el contenedor principal */
+.container {
     width: 100%;
     max-width: 800px;
     margin: auto;
     position: relative;
 }
 
-.box-main{
+/* Estilos para la sección principal con fondo azul */
+.box-main {
     width: 100%;
     padding: 10px 20px;
     display: flex;
@@ -37,29 +38,28 @@ main{
     border-radius: 200px;
 }
 
-.box-main div{
+.box-main div {
     margin: 100px 40px;
     color: white;
     transition: all 500ms;
 }
 
-
 .box-main div p,
-.box-main button{
+.box-main button {
     margin-top: 30px;
 }
 
-.box-main div h3{
+.box-main div h3 {
     font-weight: bold;
     font-size: 26px;
 }
 
-.box-main div p{
+.box-main div p {
     font-size: 16px;
     font-weight: 300;
 }
 
-.box-main button{
+.box-main button {
     padding: 10px 40px;
     border: 2px solid #fff;
     font-size: 14px;
@@ -71,14 +71,13 @@ main{
     transition: all 300ms;
 }
 
-.box-main button:hover{
+.box-main button:hover {
     background: #fff;
-    color: rgb(0, 0, 0)
+    color: rgb(0, 0, 0);
 }
 
-        /*Formularios*/
-
-.container-login{
+/* Estilos para el formulario de inicio de sesión y registro */
+.container-login {
     display: flex;
     align-items: center;
     width: 100%;
@@ -86,26 +85,24 @@ main{
     position: relative;
     top: -185px;
     left: 0px;
-
-    /*La transicion va despues del codigo JS*/
     transition: left 500ms cubic-bezier(0.175, 0.885, 0.320, 1);
 }
 
-.container-login form{
+.container-login form {
     width: 100%;
     padding: 80px 20px;
     background: rgb(255, 255, 255);
     position: absolute;
 }
 
-.container-login form h2{
+.container-login form h2 {
     font-size: 30px;
     text-align: center;
     margin-bottom: 20px;
     color: #3f00b4;
 }
 
-.container-login form input{
+.container-login form input {
     width: 100%;
     margin-top: 20px;
     padding: 10px;
@@ -115,7 +112,7 @@ main{
     outline: none;
 }
 
-.container-login form button{
+.container-login form button {
     margin-right: 219px;
     padding: 10px 40px;
     margin-top: 40px;
@@ -128,9 +125,8 @@ main{
     outline: none;
 }
 
-
-
-.icon-login{
+/* Iconos de inicio de sesión y registro */
+.icon-login {
     position: absolute;
     top: 57%;
     right: 30px;
@@ -140,7 +136,7 @@ main{
     cursor: pointer;
 }
 
-.icon-register{
+.icon-register {
     position: absolute;
     top: 67%;
     right: 30px;
@@ -150,63 +146,59 @@ main{
     cursor: pointer;
 }
 
-.icon-login:hover, .icon-register:hover{
+.icon-login:hover,
+.icon-register:hover {
     opacity: 0.8;
 }
 
-
-.passwrd{
+/* Estilos adicionales para el campo de contraseña */
+.passwrd {
     width: 100%;
     padding-right: 40px;
 }
 
-
-
-.formulario__login{
+/* Estilos para los formularios de inicio de sesión y registro */
+.formulario__login {
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* display: block; */
 }
-.formulario__register{
+
+.formulario__register {
     display: none;
 }
 
-
-
-@media screen and (max-width: 850px){
-
-    main{
+/* Estilos responsivos para pantallas más pequeñas (máximo 850px) */
+@media screen and (max-width: 850px) {
+    main {
         width: 100%;
         margin-top: 50px;
     }
 
-    .container{
+    .container {
         text-align: center;
     }
 
-    .box-main{
+    .box-main {
         max-width: 350px;
         height: 300px;
         flex-direction: column;
         margin: auto;
     }
 
-    .box-main div{
+    .box-main div {
         margin: 0px;
         position: relative;
     }
 
-
-    /*Formularios*/
-
-    .container-login{
+    /* Estilos para el formulario en pantallas más pequeñas */
+    .container-login {
         top: -10px;
         left: -5px;
         margin: auto;
     }
 
-    .container-login form{
+    .container-login form {
         position: relative;
     }
 }
