@@ -47,6 +47,7 @@ include 'header.php';
             </div>
         </div>
     </main>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script src="./Scripts/registro_y_sesión.js"></script>
 </body>
 </html>
