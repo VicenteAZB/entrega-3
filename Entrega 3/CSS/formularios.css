@@ -1,11 +1,66 @@
-/* Establece el tamaÃ±o de fuente en un 62.5% del tamaÃ±o base para facilitar los cÃ¡lculos de em */
+/* Establece el tamaño de fuente en un 62.5% del tamaño base para facilitar los cálculos de em */
 html {
     font-size: 62.5%;
 }
 
-/* Establece reglas de estilo para todos los elementos en la pÃ¡gina */
+
+/* Establece reglas de estilo para todos los elementos en la página */
 * {
     box-sizing: border-box; /* El contenido se ajusta al modelo de caja */
     margin: 0; /* Se establece el margen a 0 */
     padding: 0; /* Se establece el relleno a 0 */
+}
+
+h2{
+    padding: 2rem;
+    font-size: 32px;
+    text-align: center;
+}
+
+/* Puedes agregar reglas adicionales según tus necesidades para otros elementos li con diferentes id */
+#mensaje-1 {
+    margin-right: 30px;
+    list-style: none;
+    padding: 2rem;
+    color: #333;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+/* Otros estilos ... */
+/* Establece un estilo para el formulario */
+form {
+    font-size: 18px;
+    max-width: 400px; /* Ancho máximo del formulario */
+    margin: 20px auto; /* Centrar el formulario */
+    padding: 20px; /* Espaciado interno del formulario */
+    background-color: #f4f4f4; /* Color de fondo del formulario */
+    border: 1px solid #ddd; /* Borde del formulario */
+    border-radius: 8px; /* Radio de borde del formulario */
+}
+
+/* Establece un estilo para los elementos de formulario (input, textarea, etc.) */
+form input,
+form textarea {
+    width: 100%; /* Ancho completo */
+    padding: 10px; /* Espaciado interno */
+    margin-bottom: 10px; /* Margen inferior */
+    border: 1px solid #ccc; /* Borde */
+    border-radius: 4px; /* Radio de borde */
+}
+
+/* Establece un estilo para el botón del formulario */
+form button {
+    font-size: 16px;
+    background-color: #007bff; /* Color de fondo del botón */
+    color: #fff; /* Color del texto del botón */
+    padding: 10px 15px; /* Espaciado interno del botón */
+    border: none; /* Sin borde */
+    border-radius: 4px; /* Radio de borde del botón */
+    cursor: pointer; /* Cambia el cursor al pasar por encima del botón */
+}
+
+/* Establece un estilo para el botón del formulario al pasar el ratón sobre él */
+form button:hover {
+    background-color: #0056b3; /* Cambia el color de fondo al pasar el ratón sobre el botón */
 }

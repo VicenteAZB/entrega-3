@@ -25,7 +25,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             if ($deleteQuery && $deleteMessagesQuery) {
                 echo '
                     <script>
-                        alert("Usuario y mensajes eliminados correctamente");
+                        alert("La cuenta y todos sus datos han sido eliminados correctamente");
                         window.location = "registro_y_sesión.php";
                     </script>
                 ';
@@ -35,7 +35,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 echo '
                     <script>
                         alert("Error al eliminar el usuario y los mensajes");
-                        window.location = "registro_y_sesión.php";
+                        window.location = "formulario_borrar_cuenta.php";
                     </script>
                 ';
                 exit;
@@ -44,7 +44,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             echo '
                 <script>
                     alert("Contraseña incorrecta");
-                    window.location = "registro_y_sesión.php";
+                    window.location = "formulario_borrar_cuenta.php";
                 </script>
             ';
             exit;
@@ -53,13 +53,13 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         echo '
             <script>
                 alert("Correo electrónico incorrecto");
-                window.location = "registro_y_sesión.php";
+                window.location = "formulario_borrar_cuenta.php";
             </script>
         ';
         exit;
     }
 } else {
-    header("location: registro_y_sesión.php");
+    header("location: formulario_borrar_cuenta.php");
     exit;
 }
 ?>

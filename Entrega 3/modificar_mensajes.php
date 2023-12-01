@@ -40,11 +40,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     if ($stmt->affected_rows > 0) {
         echo '
         <script>
-            alert(" Mensaje modificado exitosamente");
-            window.location = "registro_y_sesión.php";
+            alert("Mensaje actualizado correctamente");
+            window.location = "Contacto.php";
         </script>
-        ';
-        header("location: Contacto.php?mensaje=Mensaje actualizado correctamente");
+    ';
         exit;
     } else {
         $mensaje_error = "Error al actualizar el mensaje";

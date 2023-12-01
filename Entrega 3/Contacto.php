@@ -1,5 +1,5 @@
 <?php
-    include("header.php");
+session_start();
     if(!isset($_SESSION['idusuario'])){
         echo '
             <script>
@@ -10,6 +10,7 @@
         session_destroy();
         die();
     }
+    include("header.php");
 ?>
 <!DOCTYPE html> <!-- Declaración del tipo de documento HTML -->
 <html lang="es"> <!-- Inicio del elemento HTML con especificación del idioma español -->
@@ -23,13 +24,13 @@
 </head> <!-- Fin del encabezado del documento HTML -->
 <body> <!-- Inicio del cuerpo del documento HTML -->
     <section id="contacto"> <!-- Sección con un identificador "contacto" -->
-        <h1>Contacto</h1> <!-- Encabezado de nivel 1 que indica "Contacto" -->
+        <h1>Contactanos</h1> <!-- Encabezado de nivel 1 que indica "Contacto" -->
         <form action="envio.php" method="post"> <!-- Formulario que envía datos al archivo "envio.php" utilizando el método POST -->
             <label for="nombre">Nombre:</label> <!-- Etiqueta del campo "nombre" del formulario -->
             <input type="text" id="nombre" name="nombre" placeholder="Ej: Juan Pérez" required><br> <!-- Campo de entrada de texto para el nombre -->
             <label for="mensaje">Mensaje:</label><br> <!-- Etiqueta del campo "mensaje" del formulario -->
-            <textarea id="mensaje" name="mensaje" rows="8" cols="40" required></textarea><br> <!-- Área de texto para el mensaje -->
-            <input type="submit" value="Enviar"> <!-- Botón de envío del formulario -->
+            <textarea id="mensaje" name="mensaje" placeholder="Deja tu mensaje" rows="8" cols="40" required></textarea><br> <!-- Área de texto para el mensaje -->
+            <input id ="btn" type="submit" value="Enviar"> <!-- Botón de envío del formulario -->
         </form> <!-- Fin del formulario -->
     </section> <!-- Fin de la sección "contacto" -->
     <div class="reviews">
