@@ -1,5 +1,5 @@
 <?php
-    session_start();
+    session_start(); // Inicia la sesión para gestionar variables de sesión.
     include("header.php"); // Inclusión del archivo "header.php" mediante PHP, que se usa para agregar contenido común en varias páginas.
 ?>
 <!DOCTYPE html> <!-- Declaración del tipo de documento HTML -->
@@ -45,7 +45,7 @@
             </td>
         </tr>
     </table>
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script> <!-- Script para cargar la biblioteca jQuery desde un servidor externo -->
     <script src="./Scripts/script2.js"></script> <!-- Inclusión de un archivo de script JavaScript llamado "script1.js" -->
 </body> <!-- Fin del cuerpo del documento HTML -->
 </html> <!-- Fin del documento HTML -->

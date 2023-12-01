@@ -1,15 +1,23 @@
 <?php
-session_start();
-    if(!isset($_SESSION['idusuario'])){
+    // Inicia la sesión
+    session_start();
+
+    // Verifica si el usuario no ha iniciado sesión
+    if (!isset($_SESSION['idusuario'])) {
+        // Muestra una alerta y redirige a la página de inicio de sesión
         echo '
             <script>
                 alert("Debes iniciar sesión para poder contactarnos");
                 window.location = "registro_y_sesión.php";
             </script>
         ';
+
+        // Destruye la sesión y finaliza el script
         session_destroy();
         die();
     }
+
+    // Incluye el encabezado común de la página
     include("header.php");
 ?>
 <!DOCTYPE html> <!-- Declaración del tipo de documento HTML -->
@@ -39,12 +47,10 @@ session_start();
         <ul id="reviewsList"></ul>
     </div>
     <div id="botones">
-    <button><a href="formulario_borrar_cuenta.php">Eliminar cuenta</a></button>
-    <button><a href="formulario_modificar_mensaje.php">Modificar mensaje</a></button>
+        <button><a href="formulario_borrar_cuenta.php">Eliminar cuenta</a></button>
+        <button><a href="formulario_modificar_mensaje.php">Modificar mensaje</a></button>
     </div>
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script src="./Scripts/mostrar_contactaciones.js"></script>
 </body> <!-- Fin del cuerpo del documento HTML -->
 </html> <!-- Fin del documento HTML -->
-
-

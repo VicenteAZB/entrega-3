@@ -1,5 +1,5 @@
 <?php
-    session_start();
+    session_start(); // Inicia la sesión para gestionar variables de sesión.
     include("conex.inc"); // Inclusión de un archivo PHP llamado "conex.inc"
 ?>
 <!DOCTYPE html> <!-- Declaración del tipo de documento HTML -->
@@ -48,7 +48,7 @@
         <ul id="lista"> <!-- Lista no ordenada con un identificador "lista" -->
         </ul>
     </div>
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script> <!-- Script para cargar la biblioteca jQuery desde un servidor externo -->
     <script src="./Scripts/script.js"></script> <!-- Inclusión de un archivo de script JavaScript llamado "script.js" -->
 </body> <!-- Fin del cuerpo del documento HTML -->
 </html> <!-- Fin del documento HTML -->

@@ -1,5 +1,8 @@
 <?php
+// Inicia la sesión para mantener la información del usuario entre páginas
 session_start();
+
+// Incluye el archivo de conexión a la base de datos
 include 'conex.inc';
 
 // Verifica si el usuario está autenticado
@@ -14,6 +17,7 @@ if (!isset($_POST['idmensaje']) || !is_numeric($_POST['idmensaje'])) {
     exit;
 }
 
+// Obtiene el ID del usuario y el ID del mensaje a modificar
 $idusuario = $_SESSION['idusuario'];
 $idmensaje = (int)$_POST['idmensaje']; // Convertir a entero para mayor seguridad
 
@@ -23,6 +27,7 @@ $stmt->bind_param("ii", $idmensaje, $idusuario);
 $stmt->execute();
 $resultado = $stmt->get_result();
 
+// Si el usuario no es el propietario del mensaje, muestra una alerta y redirige
 if ($resultado->num_rows == 0) {
     echo '
     <script>
@@ -35,13 +40,17 @@ if ($resultado->num_rows == 0) {
 
 $stmt->close();
 
+// Si el método de solicitud es POST, actualiza el mensaje en la base de datos
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    // Actualiza el mensaje en la base de datos
-    $nuevo_mensaje = htmlspecialchars($_POST['nuevo_mensaje']); // Evitar XSS
+    // Obtiene el nuevo mensaje y evita la inyección de código malicioso (XSS)
+    $nuevo_mensaje = htmlspecialchars($_POST['nuevo_mensaje']);
+    
+    // Prepara y ejecuta la sentencia para actualizar el mensaje
     $stmt = $conexion->prepare("UPDATE mensajes SET mensaje = ? WHERE idmensaje = ?");
     $stmt->bind_param("si", $nuevo_mensaje, $idmensaje);
     $stmt->execute();
 
+    // Verifica si se actualizó correctamente y muestra un mensaje de alerta
     if ($stmt->affected_rows > 0) {
         echo '
         <script>
