@@ -27,7 +27,7 @@
             </td> <!-- Fin de la celda de la tabla -->
         </tr> <!-- Fin de la segunda fila de la tabla -->
     </table> <!-- Fin de la tabla HTML -->
-    <div>
+    <div class="imagen-container">
         <img id="rostro">
     </div>
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
