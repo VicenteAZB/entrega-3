@@ -24,7 +24,12 @@ $stmt->execute();
 $resultado = $stmt->get_result();
 
 if ($resultado->num_rows == 0) {
-    header("location: Contacto.php");
+    echo '
+    <script>
+        alert("El ID colocado no corresponde a un mensaje escrito por usted");
+        window.location = "formulario_modificar_mensaje.php";
+    </script>
+    ';
     exit;
 }
 
@@ -46,7 +51,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     ';
         exit;
     } else {
-        $mensaje_error = "Error al actualizar el mensaje";
+        echo '
+        <script>
+            alert("Error al actualizar el mensaje");
+            window.location = "formulario_modificar_mensaje.php";
+        </script>
+    ';
     }
 
     $stmt->close();
